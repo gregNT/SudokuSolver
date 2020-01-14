@@ -19,7 +19,13 @@ namespace SudokuSolver.Workers
             for (int row = 0; row < sudokuBoard.GetLength(0); row++)
             {
                 Console.Write("|");
+                for (int col = 0; col < sudokuBoard.GetLength(1); col++)
+                {
+                    Console.WriteLine("{0}{1}", sudokuBoard[row, col], "|");
+                }
+                Console.WriteLine();
             }
+            Console.WriteLine();
         }
     }
 }
